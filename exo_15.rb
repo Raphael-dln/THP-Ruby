@@ -1,4 +1,5 @@
- puts "Quelle est votre année de naissance"
+puts "Quelle est votre année de naissance ?"
+print ">"
 birth = gets.chomp.to_i
 year = birth
 (2021 - birth).times do |i|

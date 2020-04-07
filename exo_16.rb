@@ -1,4 +1,5 @@
 puts "Quel âge avez-vous ?"
+print ">"
 age = gets.chomp.to_i
 
 year = 2020
