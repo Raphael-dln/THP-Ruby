@@ -7,6 +7,10 @@ floor = "#"
 puts "Voici la pyramide : "
 
 i.times do
-    puts floor
-    floor = floor + "#"
+    if i > 25 && i <= 0
+        puts "Erreur, choisissez un nombre entre 1 et 25"
+    else
+        puts floor
+        floor = floor + "#"
+    end
 end
