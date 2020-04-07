@@ -1,18 +1,17 @@
-puts "Quelle est votre année de naissance"
-birth = gets.chomp.to_i
-year = birth
-(2020 - birth).times do |i|
+puts "Quel âge avez-vous ?"
+age = gets.chomp.to_i
 
-    if year == 2020
-    puts "Cette année, vous avez #{year - birth} ans."
+year = 2020
 
-    elsif year == 2019
-        puts "Il y a #{2020 - year} an, vous aviez #{year - birth} ans."
+birth = year - age
 
-    else
-        puts "Il y a #{2020 - year} années, vous aviez #{year - birth} ans."
- 
-        year = year + 1
-    end
+ans = 0 
+
+while (birth <= year)
+
+    puts "Il y a #{year - birth} ans, tu avais #{ans} ans."
+
+    ans += 1
+    birth += 1
 end
 
